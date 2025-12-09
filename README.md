@@ -26,4 +26,7 @@ after logging in onto Jenkins, we need to install ssh-agent
 add credentials and ssh private key on Jenkins
 create the pipeline on Jenkins
 launch another ec2 machine and run the ec2.sh codes
+put the elastic ip of this new machine to the Jenkinfile
+configure github workflows
+set up github secrets
 ci/cd
