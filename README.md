@@ -17,11 +17,11 @@ initiate dvc environement: dvc init
 create main.py to test pipelines
 run dvc repro to generate the model (needed for the app!)
 build app.py and add templates (static files if needed)
-dockerize
+dockerize (Dockerfile, docker-compose)
 configure ec2, s3, ecr, etc. on aws
 configure inbound rules for the security group of the vm so that we can access it from a browser
 run codes in jenkins.sh on the ec2 to prepare the vm
-configure git workflow (we need to set up secrets on Git) or jenkins (we need Dockerfile, docker-compose, .env, .sh files in scripts and Jenkinfile)
+configure git workflow or jenkins 
 after logging in onto Jenkins, we need to install ssh-agent
 add credentials and ssh private key on Jenkins
 create the pipeline on Jenkins
