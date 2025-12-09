@@ -25,4 +25,5 @@ configure git workflow (we need to set up secrets on Git) or jenkins (we need Do
 after logging in onto Jenkins, we need to install ssh-agent
 add credentials and ssh private key on Jenkins
 create the pipeline on Jenkins
+launch another ec2 machine and run the ec2.sh codes
 ci/cd
