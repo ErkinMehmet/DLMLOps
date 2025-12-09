@@ -28,18 +28,23 @@ sudo usermod -aG docker jenkins
 
 newgrp docker
 
-sudo apt install awscli -y
+# sudo apt install awscli -y
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+sudo apt install unzip -y
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
 
 sudo usermod -a -G docker jenkins
 
 
 ## AWS configuration & restarts jenkins
 
-aws configure
-
+aws configure # get from IAM user
+# then need to restart the vm
 
 ## Now setup elastic IP on AWS
-
+# because if we don't do that, the IP will change after every stop/start of the instance
 
 
 ## For getting the admin password for jenkins
